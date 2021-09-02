@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Read{% endblock %}
+{% block content %}
+
+  <div class="container">
+    <h1>Read Operation</h1>
+    <br/><br/>
+
+    {% for intern in interns %}
+
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h4>
+        {{ intern.intern_name }} <small>{{ intern.intern_id }}</small>
+          </h4>
+        </li>
+        </br>
+      </ul>
+
+    {% endfor %}
+
+  </div>
+
+{% endblock %}

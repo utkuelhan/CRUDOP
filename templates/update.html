@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Update{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+    <h1>Update Operation</h1>
+
+    <br/><br/>
+
+    <form action="/update/{{intern_to_update.intern_id}}" method="POST">
+      <div class="mb-3">
+      <b><p> {% block info %} Please enter the new name! {% endblock %} </p></b>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Intern Name" name="intern_name">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+    <br/>
+
+</div>
+
+{% endblock %}

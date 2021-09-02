@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Create{% endblock %}
+
+{% block content %}
+
+  <div class="container">
+    <h1>Create Operation</h1>
+
+    <br/><br/>
+
+    <form action="/successful" method="POST">
+      <div class="mb-3">
+      <b><p> {% block info %} Please enter the credentials below {% endblock %} </p></b>
+      </div>
+
+      <div class="mb-3">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Intern Name" name="intern_name">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+
+</div>
+
+{% endblock %}

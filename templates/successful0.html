@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <div class="container">
+    <h1>Congratulations!</h1>
+    <br/>
+      <p>{{ text }}</p>
+    <p>Below you can see the input that you entered:</p>
+    <b>{{ intern_id }}</b>
+</div>
+
+{% endblock %}
+
+#to not get the credentials of CRUD ops
+{% block info %} {% endblock %}
